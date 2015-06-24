@@ -1,0 +1,111 @@
+Azul = #0f5290
+Verde = #B4EDB8
+Celeste = #d0e4f5
+Azul1 = #2191DD
+
+
+*
+	border 0
+	margin 0
+	padding none
+
+
+.navegation-responsive
+	// background-color Azul
+	width: 100%
+	overflow: hidden
+	display none
+	padding 0em 2em
+	div.logo
+		float: left
+		text-align: left
+		width 50%
+		color: #fff
+		vertical-align: middle
+		padding-top: 0.5em
+	div.button
+		float: right
+		text-align: right
+		overflow: hidden
+		// width: 50%
+		a 
+			display block
+			width: 30pt
+			padding 0.5em
+			span
+				background-color: #FFF
+				border-radius: 0px 
+				margin-bottom: 2pt
+				display: block
+				width: 100%
+				&:first-child
+					margin-top: 2pt
+					// margin-bottom 0pt !important
+	@media screen and (max-width: 768px)
+		display: block
+	
+
+.navegation
+	position: relative
+	left: 0% 
+	top 2em
+	@media (max-width: 768px)
+		left 100% 
+		background-color Celeste
+
+nav ul
+	padding 0 !important
+	width: 70%
+	border 1.5pt solid #fff
+	margin 0 auto
+	@media screen and (max-width : 768px)
+		width: 100%
+		border none
+	li
+		display: inline-block
+		a
+			// color 
+			color: #fff
+			display block
+			padding: 0.7em 1.5em
+			text-decoration: none !important
+			&:hover
+				background-color Azul
+				color #ffffff
+		@media screen and (min-width: 300px) and (max-width: 768px)
+			display block
+
+// .carousel-caption
+// 	top 25%
+// 	@media screen and (max-width: 768px)
+// 		bottom: 20px !important
+	
+header
+	width 100%
+	z-index: 70 !important
+	text-align: center
+	position: fixed	
+	padding none !important
+
+
+.header
+	background: url(../img/0.jpeg) no-repeat center center fixed 
+	background-size: cover
+	width 100%
+	height: 400pt
+	@media screen and (min-width: 100px) and (max-width: 350px)
+		background-size: cover
+		background-position: -150pt -100pt
+		height: 150pt
+	@media screen and (min-width: 360px) and (max-width: 400px)
+		background-size: cover
+		background-position: -250pt -150pt
+		height: 150pt
+	@media screen and (min-width: 400px) and (max-width: 500px)
+		background-size: cover
+		background-position: 0pt -40pt
+		height: 150pt		
+	@media screen and (min-width: 500px) and (max-width: 600px)
+		background-size: cover
+		background-position: 0pt -60pt
+		height: 200pt
